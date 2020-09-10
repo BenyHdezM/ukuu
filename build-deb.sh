@@ -37,8 +37,8 @@ echo "--------------------------------------------------------------------------
 
 }
 
-build_deb_for_dist xenial i386
-build_deb_for_dist xenial amd64
+# build_deb_for_dist focal i386
+build_deb_for_dist focal amd64
 #build_deb_for_dist stretch armel
 #build_deb_for_dist stretch armhf
 

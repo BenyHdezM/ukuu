@@ -237,8 +237,8 @@ public class TerminalWindow : Gtk.Window {
 		process_quit(child_pid);
 	}
 	
-	public void execute_command(string command){
-		term.feed_child("%s\n".printf(command), -1);
+	public void execute_command(unowned uint8[] command){
+		term.feed_child(command);
 	}
 
 	public void execute_script(string script_path, bool wait = false){
